@@ -1,0 +1,105 @@
+/* Reset default setting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+}
+
+.links {
+    width: 20vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+#about, #code {
+    cursor: pointer;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    width: 300px;
+    padding: 1rem;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 1rem;
+}
+.container p {
+    font-size: 3rem;
+}
+
+button {
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    padding: .3rem;
+    width: 100%;
+    border-radius: .5rem;
+    border: 1px solid black;
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.modal-content {
+    color: #ffffff;
+    background-color: black;
+    padding: 5rem 6rem;
+    position: relative;
+    text-align: center;
+}
+
+#close {
+    cursor: pointer;
+    position: absolute;
+    top: .7rem;
+    right: 1rem;
+}
+
+.active {
+    display: flex;
+    background-color: rgba(0,0,0,0.8);
+}
